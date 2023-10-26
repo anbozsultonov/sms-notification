@@ -94,7 +94,7 @@ $smsSender->from('John Doe')
  ````
  $smsSender->from('John Doe')
     ->to('123456789')    
-    ->priority(int $priority)
+    ->priority($priority)
     ->onFail(function(Exception $e){
         //...
     })->onSuccess(function(ResponseInterface $response){
