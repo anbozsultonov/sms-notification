@@ -87,5 +87,3 @@ $smsSender->from('from')
         //...
     });                
 ````
-**documentation of opentracing php**
-https://github.com/opentracing/opentracing-php
