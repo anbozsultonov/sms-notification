@@ -9,7 +9,7 @@ class SmsNotificationServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $config = config_path('sms-notification.php');
-        $localConfig = __DIR__ . '/../config/sms-notification.php';
+        $localConfig = __DIR__ . '/../../config/sms-notification.php';
 
         if (!file_exists($config)) {
             copy($localConfig, $config);
@@ -22,6 +22,6 @@ class SmsNotificationServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/sms-notification.php', 'sms-notification');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/sms-notification.php', 'sms-notification');
     }
 }
