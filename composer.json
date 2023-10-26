@@ -1,0 +1,28 @@
+{
+    "name": "laravel/sms-notification",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laravel\\SmsNotification\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "anbozsultonov",
+            "email": "anboz98sultonov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.4.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\SmsNotification\\Providers\\SmsNotificationServiceProvider"
+            ]
+        }
+    }
+}
