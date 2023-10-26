@@ -81,9 +81,9 @@ $smsSender = new SmsNotificationSender();
 $smsSender->from('John Doe')
     ->to('123456789')    
     ->headers($headers)
-    ->onFail(function(Exception $e){
+    ->onFail(function(Exception $e) {
         //...
-    })->onSuccess(function(ResponseInterface $response){
+    })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text');
 ````
@@ -92,12 +92,14 @@ $smsSender->from('John Doe')
 
 - set priority
  ````
+ $smsSender = new SmsNotificationSender();
+ 
  $smsSender->from('John Doe')
     ->to('123456789')    
     ->priority($priority)
-    ->onFail(function(Exception $e){
+    ->onFail(function(Exception $e) {
         //...
-    })->onSuccess(function(ResponseInterface $response){
+    })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text'); 
 
@@ -108,9 +110,9 @@ $smsSender->from('John Doe')
 $smsSender->from('John Doe')
     ->to('123456789')    
     ->expiresIn($expiresIn)
-    ->onFail(function(Exception $e){
+    ->onFail(function(Exception $e) {
         //...
-    })->onSuccess(function(ResponseInterface $response){
+    })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text'); 
 ````
@@ -120,9 +122,9 @@ $smsSender->from('John Doe')
  $smsSender->from('John Doe')
     ->to('123456789')
     ->countryCode($countryCode)
-    ->onFail(function(Exception $e){
+    ->onFail(function(Exception $e) {
         //...
-    })->onSuccess(function(ResponseInterface $response){
+    })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text');                
 ````
