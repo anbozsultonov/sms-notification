@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\UseCases;
+namespace AlifSmsNotification\UseCases;
 
 use Closure;
 use Exception;

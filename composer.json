@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Laravel\\SmsNotification\\": "src/"
+            "AlifSmsNotification\\": "src/"
         }
     },
     "authors": [
@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laravel\\SmsNotification\\Providers\\SmsNotificationServiceProvider"
+                "AlifSmsNotification\\Providers\\SmsNotificationServiceProvider"
             ]
         }
     }

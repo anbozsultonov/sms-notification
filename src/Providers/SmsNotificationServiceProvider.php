@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\Providers;
+namespace AlifSmsNotification\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
