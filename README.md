@@ -1,6 +1,6 @@
-> CELL PHONE SMS NOTIFICATION
+# CELL PHONE SMS NOTIFICATION
 
-# prerequisites
+> prerequisites
 
 <u>To use this package you need:</u>
 - composer 2.2 and above
@@ -8,7 +8,8 @@
 - guzzlehttp/guzzle
 - laravel 9 and above
 
-# Installation
+> Installation
+
 install package by running the below commands:
 
 ````
