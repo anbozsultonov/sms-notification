@@ -1,5 +1,5 @@
 {
-    "name": "laravel/sms-notification",
+    "name": "alif-laravel/sms-notification",
     "type": "package",
     "license": "MIT",
     "autoload": {
