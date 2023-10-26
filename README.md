@@ -41,7 +41,7 @@ $smsSender->from('from')
     })->onSuccess(function(ResponseInterface $response){
         //...
     })->send('Message text');
-
+//================================================================
 //set headers
 $smsSender->from('from')
     ->to('123456789')    
@@ -51,7 +51,8 @@ $smsSender->from('from')
     })->onSuccess(function(ResponseInterface $response){
         //...
     })->send('Message text');
-     
+    
+//================================================================     
 //set priority
  $smsSender->from('from')
     ->to('123456789')    
@@ -61,7 +62,8 @@ $smsSender->from('from')
     })->onSuccess(function(ResponseInterface $response){
         //...
     })->send('Message text'); 
-    
+
+//================================================================    
 //set expiresIn
 $smsSender->from('from')
     ->to('123456789')    
@@ -71,7 +73,9 @@ $smsSender->from('from')
     })->onSuccess(function(ResponseInterface $response){
         //...
     })->send('Message text'); 
-    
+
+
+//================================================================    
 //set countryCode
  $smsSender->from('from')
     ->to('123456789')
