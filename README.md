@@ -91,6 +91,7 @@ $smsSender->from('John Doe')
 
 
 - set priority
+![img.png](img.png)
  ````
  $smsSender = new SmsNotificationSender();
  
