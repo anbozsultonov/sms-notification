@@ -24,7 +24,7 @@ class SmsNotificationSender
             'PhoneNumber' => null,
             'SenderAddress' => null,
             'text' => null,
-            'priority' => 2,
+            'priority' => 1,
             'ExpiresIn' => 0,
             'sms_type' => 1
         ],
