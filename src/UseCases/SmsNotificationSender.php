@@ -50,6 +50,11 @@ class SmsNotificationSender
         $this->options['headers'] = $config['headers'];
     }
 
+    public static function make(): static
+    {
+        return new static();
+    }
+
     public function send(string $text): SmsNotificationSender
     {
         try {
