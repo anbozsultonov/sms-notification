@@ -63,6 +63,7 @@ class SmsNotificationSender
             $this->validateOptions();
 
             $client = new Client(['base_uri' => $this->url]);
+
             $response = $client->request($this->method, '', $this->options);
 
             $this->response = $response;
@@ -158,6 +159,7 @@ class SmsNotificationSender
 
         if (!$this->successClosureCalled && $onSuccessClosure = $this->onSuccessClosure) {
             $onSuccessClosure($this->response);
+
             $this->successClosureCalled = true;
         }
     }
@@ -169,6 +171,7 @@ class SmsNotificationSender
         }
 
         if (!$this->failClosureCalled && $onFileClosure = $this->onFailClosure) {
+
             $onFileClosure($this->exception);
             $this->failClosureCalled = true;
         }
