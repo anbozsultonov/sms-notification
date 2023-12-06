@@ -41,6 +41,8 @@ return [
 -  simple send
 ````
 $smsSender = new SmsNotificationSender(); 
+//OR
+$smsSender = SmsNotificationSender::make(); 
 
 $smsSender->from('John Doe')
     ->to('123456789')
