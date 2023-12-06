@@ -40,17 +40,25 @@ return [
 
 -  simple send
 ````
-$smsSender = new SmsNotificationSender();
+$smsSender = new SmsNotificationSender(); 
 
 $smsSender->from('John Doe')
     ->to('123456789')
     ->send('Message text');
+    
+//or
+SmsNotificationSender::make()
+    ->from('John Doe')
+    ->to('123456789')
+    ->send('Message text');    
 ````
 
 -  send async
 
 ````
 $smsSender = new SmsNotificationSender();
+//OR
+$smsSender = SmsNotificationSender::make(); 
 
 $smsSender->from('John Doe')
     ->to('123456789')
@@ -59,7 +67,7 @@ $smsSender->from('John Doe')
 - handle exceptions
 
 ````
-$smsSender = new SmsNotificationSender();
+$smsSender = SmsNotificationSender::make();
 
 $smsSender->from('John Doe')
     ->to('123456789')    
@@ -76,7 +84,7 @@ $smsSender->from('John Doe')
 - with headers
 
 ````
-$smsSender = new SmsNotificationSender();
+$smsSender = SmsNotificationSender::make();
 
 $smsSender->from('John Doe')
     ->to('123456789')    
@@ -94,7 +102,7 @@ $smsSender->from('John Doe')
 - priority: integer|min:0|max:2
 ![img_1.png](img_1.png)
  ````
- $smsSender = new SmsNotificationSender();
+ $smsSender = SmsNotificationSender::make();
  
  $smsSender->from('John Doe')
     ->to('123456789')    
