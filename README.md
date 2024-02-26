@@ -12,13 +12,13 @@
 
 install package by running the below commands:
 
-````
+```
  composer require alif/alif-sms-notification
-````
+```
 
 it will create and past the following code in the file named `config/sms-notification.php`
 
-````
+```php
 <?php
 
 return [
@@ -34,12 +34,12 @@ return [
         'send_sms' => '/api/v1/Sms'
     ],
 ];
-````
+```
 
 > Usage
 
 -  simple send
-````
+```php
 $smsSender = new SmsNotificationSender(); 
 //OR
 $smsSender = SmsNotificationSender::make(); 
@@ -53,11 +53,11 @@ SmsNotificationSender::make()
     ->from('John Doe')
     ->to('123456789')
     ->send('Message text');    
-````
+```
 
 -  send async
 
-````
+```php
 $smsSender = new SmsNotificationSender();
 //OR
 $smsSender = SmsNotificationSender::make(); 
@@ -65,10 +65,10 @@ $smsSender = SmsNotificationSender::make();
 $smsSender->from('John Doe')
     ->to('123456789')
     ->sendAsinc('Message text');
-````
+```
 - handle exceptions
 
-````
+```php
 $smsSender = SmsNotificationSender::make();
 
 $smsSender->from('John Doe')
@@ -79,13 +79,13 @@ $smsSender->from('John Doe')
         // do smth ...
     })->send('Message text');
 
-````
+```
 
 
 
 - with headers
 
-````
+```php
 $smsSender = SmsNotificationSender::make();
 
 $smsSender->from('John Doe')
@@ -96,14 +96,14 @@ $smsSender->from('John Doe')
     })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text');
-````
+```
 
 
 
 - set priority
 - priority: integer|min:0|max:2
 ![img_1.png](img_1.png)
- ````
+ ```php
  $smsSender = SmsNotificationSender::make();
  
  $smsSender->from('John Doe')
@@ -115,10 +115,10 @@ $smsSender->from('John Doe')
         //...
     })->send('Message text'); 
 
-````
+```
 
 - set expiresIn
-````
+```php
 $smsSender->from('John Doe')
     ->to('123456789')    
     ->expiresIn($expiresIn)
@@ -127,10 +127,10 @@ $smsSender->from('John Doe')
     })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text'); 
-````
+```
 
 - set countryCode
- ````
+ ```php
  $smsSender->from('John Doe')
     ->to('123456789')
     ->countryCode($countryCode)
@@ -139,4 +139,4 @@ $smsSender->from('John Doe')
     })->onSuccess(function(ResponseInterface $response) {
         //...
     })->send('Message text');                
-````
+```
